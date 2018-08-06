@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MAC环境变量配置," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="EricYxxx">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Mac 中配置环境变量相关问题 我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在.bash_profile中（当然如果是用的全局配置/etc/profile当然不会有什么问题），此问题起源于我新开一个zsh并使用mvn -v总是找不到指令，必须source ~/.bash_profile才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。    （1）">
+<meta name="keywords" content="MAC环境变量配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="环境变量配置">
+<meta property="og:url" content="http://yoursite.com/2018/08/06/环境变量配置/index.html">
 <meta property="og:site_name" content="EricYxxx">
+<meta property="og:description" content="Mac 中配置环境变量相关问题 我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在.bash_profile中（当然如果是用的全局配置/etc/profile当然不会有什么问题），此问题起源于我新开一个zsh并使用mvn -v总是找不到指令，必须source ~/.bash_profile才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。    （1）">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-08-06T11:59:32.002Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EricYxxx">
+<meta name="twitter:title" content="环境变量配置">
+<meta name="twitter:description" content="Mac 中配置环境变量相关问题 我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在.bash_profile中（当然如果是用的全局配置/etc/profile当然不会有什么问题），此问题起源于我新开一个zsh并使用mvn -v总是找不到指令，必须source ~/.bash_profile才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。    （1）">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/06/环境变量配置/"/>
 
 
 
 
 
-  <title>EricYxxx</title>
+  <title>环境变量配置 | EricYxxx</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/06/环境变量配置/" itemprop="url">环境变量配置</a></h1>
+          <h1 class="post-title" itemprop="name headline">环境变量配置</h1>
         
 
         <div class="post-meta">
@@ -280,6 +282,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -298,9 +305,7 @@
       
 
       
-        
-          
-            <h1 id="Mac-中配置环境变量相关问题"><a href="#Mac-中配置环境变量相关问题" class="headerlink" title="Mac 中配置环境变量相关问题"></a><strong>Mac 中配置环境变量相关问题</strong></h1><blockquote>
+        <h1 id="Mac-中配置环境变量相关问题"><a href="#Mac-中配置环境变量相关问题" class="headerlink" title="Mac 中配置环境变量相关问题"></a><strong>Mac 中配置环境变量相关问题</strong></h1><blockquote>
 <p>我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在<code>.bash_profile</code>中（当然如果是用的全局配置<code>/etc/profile</code>当然不会有什么问题），此问题起源于我新开一个zsh并使用<code>mvn -v</code>总是找不到指令，必须<code>source ~/.bash_profile</code>才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。</p>
 </blockquote>
 <hr>
@@ -334,8 +339,6 @@
 <p>环境变量更改后，在用户下次登陆时生效。</p>
 <hr>
 
-          
-        
       
     </div>
     
@@ -350,147 +353,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/25/My-New-Post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ericyxxx">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="EricYxxx">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/25/My-New-Post/" itemprop="url">Hello Blog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-25T19:59:05+08:00">
-                2018-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/MAC环境变量配置/" rel="tag"># MAC环境变量配置</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="finally-下定决心想要记录点什么"><a href="#finally-下定决心想要记录点什么" class="headerlink" title="finally 下定决心想要记录点什么"></a>finally 下定决心想要记录点什么</h3><p>我这个人呐，虽然无比强迫症，爱规划好一切，却又偏执的喜欢一时兴起<br>搭了个博客 记录一下 生活 · 心情 · 技术？？？</p>
-<p>在这个氛围，人我都不太喜欢的团队实习了40天了，最强烈的感觉是想走？？？<br>但是看了40多天的源码，总还是一种沉淀   </p>
-<p>istio ，Sofa ， ServiceMesh 当做在此处开始的词语<br>也是我觉得最需要记录下来的<br>还是多亏了谷歌程序员优秀的代码风格<br>不然没有文档没有注释裸看代码真的好辛苦   </p>
-<p>虽然我不喜欢这个公司，但却是多少Java程序员梦寐以求的地方，也是我技术之路真正开启的地方，有一瞬间突然觉得实验室呆了三年真是虚度了多少光阴。</p>
-<blockquote>
-<p>喜欢的地方让我浑浑噩噩<br>讨厌的地方却让我获得了重生<br>但愿我爱的所有人们都有个好前程</p>
-</blockquote>
-<p>2018 / 7    </p>
-<p>为我人生第二个本命年剩下的半年做个大致规划吧</p>
-<blockquote>
-<p>拿到心仪的offer<br>进军区块链<br>但愿能遇到真爱</p>
-</blockquote>
-<p>迷茫时该来此处看看   </p>
-<p>谨记新生活开始的地方   </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/25/My-New-Post/" rel="next" title="Hello Blog">
+                <i class="fa fa-chevron-left"></i> Hello Blog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -500,10 +392,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -511,6 +404,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -531,8 +428,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -583,6 +489,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac-中配置环境变量相关问题"><span class="nav-number">1.</span> <span class="nav-text">Mac 中配置环境变量相关问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac配置环境变量的地方"><span class="nav-number">1.0.1.</span> <span class="nav-text">Mac配置环境变量的地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MAC-修改host文件"><span class="nav-number">1.0.2.</span> <span class="nav-text">MAC 修改host文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linux下查看和添加PATH环境变量"><span class="nav-number">1.0.3.</span> <span class="nav-text">linux下查看和添加PATH环境变量</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -724,6 +646,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
