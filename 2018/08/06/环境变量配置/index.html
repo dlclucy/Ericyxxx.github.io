@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="MAC环境变量配置," />
+  <meta name="keywords" content="MAC," />
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="Mac 中配置环境变量相关问题 我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在.bash_profile中（当然如果是用的全局配置/etc/profile当然不会有什么问题），此问题起源于我新开一个zsh并使用mvn -v总是找不到指令，必须source ~/.bash_profile才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。    （1）">
-<meta name="keywords" content="MAC环境变量配置">
+<meta name="keywords" content="MAC">
 <meta property="og:type" content="article">
 <meta property="og:title" content="环境变量配置">
 <meta property="og:url" content="http://yoursite.com/2018/08/06/环境变量配置/index.html">
 <meta property="og:site_name" content="EricYxxx">
 <meta property="og:description" content="Mac 中配置环境变量相关问题 我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在.bash_profile中（当然如果是用的全局配置/etc/profile当然不会有什么问题），此问题起源于我新开一个zsh并使用mvn -v总是找不到指令，必须source ~/.bash_profile才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。    （1）">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-08-06T12:09:41.331Z">
+<meta property="og:updated_time" content="2018-08-06T12:11:21.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="环境变量配置">
 <meta name="twitter:description" content="Mac 中配置环境变量相关问题 我的笔记本终端改用zsh，但是我日常使用的JAVA，MAVEN环境变量等都是保存在.bash_profile中（当然如果是用的全局配置/etc/profile当然不会有什么问题），此问题起源于我新开一个zsh并使用mvn -v总是找不到指令，必须source ~/.bash_profile才可以….搞得我很烦，才决定研究一下MAC中环境变量文件的关系。    （1）">
@@ -328,9 +328,9 @@
 <h3 id="MAC-修改host文件"><a href="#MAC-修改host文件" class="headerlink" title="MAC 修改host文件"></a><strong>MAC 修改host文件</strong></h3><p><code>sudo vi /etc/hosts</code></p>
 <hr>
 <h3 id="linux下查看和添加PATH环境变量"><a href="#linux下查看和添加PATH环境变量" class="headerlink" title="linux下查看和添加PATH环境变量"></a><strong>linux下查看和添加PATH环境变量</strong></h3><blockquote>
-<p>PATH的格式为:      </p>
+<p>PATH的格式为:   </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PATH=$PATH:&lt;PATH 1&gt;:&lt;PATH 2&gt;:&lt;PATH 3&gt;:------:&lt;PATH N&gt;</span><br><span class="line">```   </span><br><span class="line"></span><br><span class="line">中间用冒号隔开。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt;添加PATH环境变量：</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PATH=$PATH:&lt;PATH 1&gt;:&lt;PATH 2&gt;:&lt;PATH 3&gt;:------:&lt;PATH N&gt;</span><br><span class="line">```      </span><br><span class="line"></span><br><span class="line">中间用冒号隔开。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt;添加PATH环境变量：</span><br></pre></td></tr></table></figure>
 <p>export PATH=/opt/STM/STLinux-2.3/devkit/sh4/bin:$PATH<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line">&gt;查看PATH环境变量：</span><br></pre></td></tr></table></figure></p>
 <p>echo $PATH<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> ----------------------------</span><br><span class="line"></span><br><span class="line">### **操作示例：**</span><br><span class="line"></span><br><span class="line">通过编辑 启动文件 来改PATH，`vim /etc/profile`   </span><br><span class="line">在文档最后，添加:</span><br></pre></td></tr></table></figure></p>
 <p>export PATH=”/opt/STM/STLinux-2.3/devkit/sh4/bin:$PATH”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">保存，退出。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">想立即生效请运行：</span><br></pre></td></tr></table></figure></p>
@@ -355,7 +355,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/MAC环境变量配置/" rel="tag"># MAC环境变量配置</a>
+            <a href="/tags/MAC/" rel="tag"># MAC</a>
           
         </div>
       
