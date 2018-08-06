@@ -337,9 +337,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $PATH</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="操作示例："><a href="#操作示例：" class="headerlink" title="操作示例："></a><strong>操作示例：</strong></h3><p>通过编辑 启动文件 来改PATH，<code>vim /etc/profile</code><br>在文档最后，添加:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;/opt/STM/STLinux-2.3/devkit/sh4/bin:$PATH&quot;</span><br><span class="line">```  </span><br><span class="line"> </span><br><span class="line">保存，退出。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">想立即生效请运行：</span><br></pre></td></tr></table></figure>
-<p>source /etc/profile<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如果想立刻生效，则可执行下面的语句：</span><br></pre></td></tr></table></figure></p>
-<p>source .bash_profile<br><code>`</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;/opt/STM/STLinux-2.3/devkit/sh4/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+<p>保存，退出。</p>
+<p>想立即生效请运行：   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<p>如果想立刻生效，则可执行下面的语句：   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure>
 <p>环境变量更改后，在用户下次登陆时生效。</p>
 <hr>
 
